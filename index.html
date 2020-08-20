@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section id="html5-drag" class="container">
+        <header>
+            <h2>Drag N' Drop - <span>HTML5</span></h2>
+        </header>
+        <article id="holder" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)"
+            ondragover="return dragOver(event)">
+            <div class="drag" id="boxA" draggable="true" ondragstart="return dragStart(event)"></div>
+            <div class="drag" id="boxB" draggable="true" ondragstart="return dragStart(event)"></div>
+            <div class="drag" id="boxC" draggable="true" ondragstart="return dragStart(event)"></div>
+        </article>
+
+        <article id="dropIt" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)"
+            ondragover="return dragOver(event)"></article>
+    </section><!-- /#html5-drag -->
+</body>
+
+</html>
